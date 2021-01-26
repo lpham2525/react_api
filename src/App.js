@@ -1,7 +1,8 @@
 import React from 'react'
 
-function App() {
-  return (
+class App extends Component {
+  render()  {
+    return(
     <div>
 
     </div>
