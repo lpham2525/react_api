@@ -1,10 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Form extends Component {
-  render(
-    return({
-
-    })
+const Form = (props) => {
+  return (
+    <form>
+      <p>
+        <label htmlFor='title'>title</label>
+        <input
+          type='text'
+          name='title'
+          id='title'
+          onChange={props.handleInputChange}
+          value={props.title}
+        />
+      </p>
+      <p>
+        <button onClick={props.handleSearchMovie}>Search Movie</button>
+      </p>
+    </form>
   )
 }
 
